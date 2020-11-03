@@ -1,0 +1,375 @@
+@font-face{
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Regular.woff);
+}
+
+@font-face{
+    font-family: "PlayfairDisplay";
+    src: url(../fonts/PlayfairDisplay-Italic.woff);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: url(../img/background.png) no-repeat top left;
+}
+
+#container{
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.area-central{
+    margin: 0 auto;
+    width: 85%;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* SELEÇÃO*/
+
+#container header #home a{
+    background-color: rgba(0,0,0,0.3);
+    border: none;
+}
+
+/* AREA-MENU */
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 6.25rem;
+    min-width: 56.25rem;
+}
+
+header li{
+    float: left;
+}
+
+header nav a{
+    padding: 1rem;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+header nav a:hover{
+    border-bottom: 2px solid #FFF;
+}
+
+/* AREA-CONTEUDO-1 */
+
+.area-conteudo-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40.625rem;
+}
+
+.area-conteudo-1 article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #FFF;
+}
+
+.area-conteudo-1 h2{
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+}
+
+.area-conteudo-1 button{
+    background: none;
+    border: none;
+}
+
+.area-conteudo-1 a{
+    display: block;
+    padding: 1rem 2.5rem;
+    font-weight: 600;
+    color: #FFF;
+    background-color: #e84545;
+    border: 1px solid #e84545;
+    text-transform: uppercase;
+    margin-top: 3rem;
+}
+
+.area-conteudo-1 a:hover{
+    color: #e84545;
+    background-color: #FFF;
+    border: 1px solid #e84545;
+}
+
+/* AREA-CONTEUDO-2 */
+
+.area-conteudo-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3rem;
+    min-width: 43.75rem;
+}
+
+.area-conteudo-2 .conteudo{
+    display: flex;
+    width: 16rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 1rem;
+    max-width: 300px;
+}
+
+.area-conteudo-2 .conteudo h3{
+    text-transform: uppercase;
+    color: #2d3033;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.area-conteudo-2 .conteudo p{
+    font-size: .85rem;
+    color: #6c7279;
+    font-weight: 500;
+}
+
+/* AREA-CONTEUDO-3 */
+
+.area-conteudo-3 article{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 38.75rem;
+}
+
+.area-conteudo-3 div{
+    display: flex;
+    width: 18.75rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 1px;
+}
+
+.area-conteudo-3 div img{
+    width: 100%;
+}
+
+/* AREA-CONTEUDO-4 */
+
+.area-conteudo-4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 4.5rem 0;
+    min-width: 35.3125rem;
+}
+
+.area-conteudo-4 img{
+    width: 100%;
+}
+
+.area-conteudo-4 article{
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    flex-shrink: 1;
+    border: 1px solid #e8ecee;
+    padding: 0.625rem;
+    margin: 0.625rem;
+}
+
+.area-conteudo-4 h4{
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #2d3033;
+    padding-bottom: .5rem;
+}
+
+.area-conteudo-4 h5{
+    font-size: 1em;
+    font-weight: 500;
+    color: #e84545;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+.area-conteudo-4 p{
+    color: #6c7279;
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+
+.area-conteudo-4 ul{
+    display: flex;
+}
+
+.area-conteudo-4 li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 1.5625rem;
+    padding: 0.3125rem;
+    margin-right: 0.1875rem;
+    border: 1px solid #e8ecee;
+}
+
+/* AREA-CONTEUDO-5 */
+
+.area-conteudo-5{
+    display: flex;
+    justify-content: space-between;
+    min-width: 60rem;
+}
+
+.conteudo-5-img{
+    display: flex;
+    flex-basis: 50%;
+}
+
+.conteudo-5-img img{
+    width: 100%;
+}
+    
+
+.conteudo-5-texto{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    background: url(../img/client2.png) no-repeat top left;
+    background-size: cover;
+    color: #FFF;
+    padding: 3rem;
+    box-sizing: border-box;
+}
+
+.conteudo-5-texto span{
+    font-family: "PlayfairDisplay", sans-serif;
+    font-size: 2em;
+    width: 25rem;
+}
+
+.conteudo-5-texto p{
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+/* AREA-CONTEUDO-6 */
+
+.area-conteudo-6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5rem 0;
+    min-width: 46.875rem;
+}
+
+.area-conteudo-6 h2{
+    font-family: "Raleway", sans-serif;
+    font-weight: normal;
+    font-size: 2em;
+    text-transform: capitalize;
+    color: #3b3e41;
+}
+
+.area-conteudo-6 p{
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.5rem 0 2rem 0;
+    color: #2d3033;
+}
+
+.area-conteudo-6 button{
+    border: 0;
+    background: 0;
+}
+
+.area-conteudo-6 a{
+    background-color: #e84545;
+    border: 1px solid #e84545;
+    padding: 0.9rem 4rem 0.8rem 4rem;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.area-conteudo-6 a:hover{
+    background-color: #FFF;
+    color: #e84545;
+    border: 1px solid #e84545;
+}
+
+/* RODAPE */
+
+.rodape{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #3a3e64;
+}
+
+.rodape div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rodape div article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    max-width: 13rem;
+    box-sizing: border-box;
+    margin: 2rem;
+}
+
+.rodape h4{
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    padding-bottom: 1rem;
+    color: #FFF;
+}
+
+.rodape p{
+    color: #9d9fb2;
+}
+
+.rodape li{
+    float: left;
+}
+
+.rodape img{
+    width: 40px;
+    margin: 0.5rem;
+}
+
+.copy{
+    background-color: #313454;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
