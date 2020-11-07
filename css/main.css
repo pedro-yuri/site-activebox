@@ -37,21 +37,17 @@ a{
     text-decoration: none;
 }
 
-/* SELEÇÃO*/
-
-#container header #home a{
-    background-color: rgba(0,0,0,0.3);
-    border: none;
-}
-
 /* AREA-MENU */
 
 header{
+    background-color: rgba(0, 0, 0 ,0.45);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 6.25rem;
     min-width: 56.25rem;
+    position: fixed;
+    left: 0;
+    right: 0;
 }
 
 header li{
@@ -75,7 +71,7 @@ header nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40.625rem;
+    height: 46.75rem;
 }
 
 .area-conteudo-1 article{
