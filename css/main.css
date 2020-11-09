@@ -13,6 +13,10 @@
     margin: 0;
 }
 
+html, body, #container{
+    overflow: hidden auto;
+}
+
 body{
     background: url(../img/background.png) no-repeat top left;
 }
@@ -20,7 +24,6 @@ body{
 #container{
     margin: 0 auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 100%;
     box-sizing: border-box;
 }
 
@@ -78,13 +81,14 @@ header nav a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
     color: #FFF;
 }
 
 .area-conteudo-1 h2{
     text-transform: uppercase;
-    font-size: 3em;
+    font-size: 1.5em;
     font-weight: normal;
     margin-bottom: 1.5rem;
 }
@@ -117,8 +121,7 @@ header nav a:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 3rem;
-    min-width: 43.75rem;
+    padding: 3rem 0;
 }
 
 .area-conteudo-2 .conteudo{
@@ -152,7 +155,6 @@ header nav a:hover{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    min-width: 38.75rem;
 }
 
 .area-conteudo-3 div{
@@ -174,7 +176,6 @@ header nav a:hover{
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 4.5rem 0;
-    min-width: 35.3125rem;
 }
 
 .area-conteudo-4 img{
@@ -230,40 +231,36 @@ header nav a:hover{
 
 .area-conteudo-5{
     display: flex;
-    justify-content: space-between;
-    min-width: 60rem;
+    flex-wrap: wrap;
 }
 
-.conteudo-5-img{
+.area-conteudo-5 article{
     display: flex;
-    flex-basis: 50%;
+    flex-grow: 1;
+    width: 500px;
+    color: #FFF;
 }
 
-.conteudo-5-img img{
+.area-conteudo-5 .area-conteudo-5-img img{
     width: 100%;
 }
-    
 
-.conteudo-5-texto{
-    display: flex;
+.area-conteudo-5 .area-conteudo-5-texto{
     flex-direction: column;
-    flex-basis: 50%;
-    background: url(../img/client2.png) no-repeat top left;
+    background: url(../img/client2.png) no-repeat top center;
     background-size: cover;
-    color: #FFF;
-    padding: 3rem;
-    box-sizing: border-box;
 }
 
-.conteudo-5-texto span{
+.area-conteudo-5 .area-conteudo-5-texto h3{
     font-family: "PlayfairDisplay", sans-serif;
-    font-size: 2em;
-    width: 25rem;
+    font-size: 1.5rem;
+    padding: 2rem 0 0 2rem;
 }
 
-.conteudo-5-texto p{
+.area-conteudo-5 .area-conteudo-5-texto span{
     text-transform: uppercase;
-    margin-top: 2rem;
+    font-weight: 500;
+    padding: 1.5rem 0 2rem 2rem;
 }
 
 /* AREA-CONTEUDO-6 */
@@ -274,7 +271,6 @@ header nav a:hover{
     align-items: center;
     text-align: center;
     padding: 5rem 0;
-    min-width: 46.875rem;
 }
 
 .area-conteudo-6 h2{
@@ -338,7 +334,7 @@ header nav a:hover{
     flex-shrink: 1;
     max-width: 13rem;
     box-sizing: border-box;
-    margin: 2rem;
+    margin: 1.2rem;
 }
 
 .rodape h4{
@@ -367,5 +363,27 @@ header nav a:hover{
     flex-grow: 1;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 2rem;
+}
+
+@media (min-width: 768px){
+    .area-conteudo-1 h2{
+        font-size: 3em;
+    }
+
+    .area-conteudo-5{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 375px){
+    .area-conteudo-5 .area-conteudo-5-texto h3,span{
+        font-size: 1rem;
+    }
+
+    .area-conteudo-5 .area-conteudo-5-texto span{
+        font-size: 0.7rem;
+    }
 }
